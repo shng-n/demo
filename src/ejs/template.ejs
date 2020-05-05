@@ -1,0 +1,45 @@
+<% var jData = jData; %>
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Webの勉強を開始</title>
+</head>
+<html>
+  <%- include('partial/_head'); %>
+  <body>
+    <% if (jData.thumbs >= 2 ) { %>
+    <ul class="thumbs">
+        <li><img src="img/<%= jData.number %>.jpg" style = "width: 200px;"></li>
+        <% for( var i = 0; i < jData.thumbs - 1; i++ ) { %>
+        <li><img src="img/<%= jData.number%>_0<%= i+2 %>.jpg" style = "width: 200px;"></li>
+        <% } %>
+    </ul>
+    <% } %>
+
+    <div>
+      <% if ( jData.new ) { %>
+      <p>NEW</p>
+      <% } %>
+
+      <p><%- jData.description %></p>
+
+      <div class="specBox">
+        <% for (i of jData.spec) { %>
+        <ul>
+          <li><%= i.item %></li>
+          <li>&yen; <%= i.price %></li>
+          <li>No. <%= i.number %></li>
+          <% if ( i.size ) { %>
+          <li>サイズ：<%= i.size %></li>
+          <% } %>
+          <% if ( i.color ) { %>
+          <li>カラー：<%= i.color %></li>
+          <% } %>
+        </ul>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('partial/_footer'); %>
+  </body>
+</html>

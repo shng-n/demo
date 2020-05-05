@@ -1,0 +1,60 @@
+[
+  {
+    "number": "01",
+    "thumbs": "3",
+    "new": "true",
+    "description": "おすすめ<br>ギターです。",
+    "spec": [
+        {
+            "item": "ワンピース",
+            "price": "18,000",
+            "number": "12-1-4",
+            "size": "S・M・L",
+            "color": "ホワイト・ピンク"
+        },
+        {
+            "item": "バッグ",
+            "price": "32,400",
+            "number": "18-1-2",
+            "size": "",
+            "color": ""
+        },
+        {
+            "item": "スニーカー",
+            "price": "8,640",
+            "number": "16-1-4",
+            "size": "23.0 / 24.0",
+            "color": ""
+        }
+    ]
+  },
+  {
+    "number": "02",
+    "thumbs": "",
+    "new": "",
+    "description": "結婚式の二次会にぴったりの<br class=\"pcNone\">パーティードレス！",
+    "spec": [
+        {
+            "item": "ドレス",
+            "price": "108,000",
+            "number": "12-1-4",
+            "size": "9号",
+            "color": "ネイビー、ブラック"
+        },
+        {
+            "item": "ネックレス",
+            "price": "30,400",
+            "number": "18-1-6",
+            "size": "",
+            "color": ""
+        },
+        {
+            "item": "バッグ",
+            "price": "10,680",
+            "number": "16-1-3",
+            "size": "",
+            "color": ""
+        }
+    ]
+  }
+]
